@@ -17,7 +17,7 @@ local Items = {
 }
 
 local LoadLocal = false
-local MainLink = LoadLocal and "" or "https://raw.githubusercontent.com/eufemia3/strategies-x-/refs/heads/main/TDS/"
+local MainLink = LoadLocal and "" or "https://raw.githubusercontent.com/quincy35/secret/refs/heads/main/TDS/"
 
 local OldTime = os.clock()
 
