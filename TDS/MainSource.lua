@@ -13,7 +13,7 @@ end
 local Version = "Version: 0.3.22 [Alpha]"
 local Items = {
 	Enabled = true,
-	Name = {"Bell", "Lorebook"}
+	Name = {"Duck", "Lorebook"}
 }
 
 local LoadLocal = false
