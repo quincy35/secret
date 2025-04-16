@@ -27,7 +27,9 @@ local SpecialGameMode = {
     --The Hunt Event Maps [NO LONGER EXIST IN GAME FILES]
        ["Baseplate-L"] = {mode = "april_fools2025", difficulty = "Map A"},
        ["Baseplate-W"] = {mode = "april_fools2025", difficulty = "Map B"},
-   -- April Fools Maps[NEW]
+   -- April Fools Maps[STILL EXIST]
+       ["Bathroom Approach"] = {mode = "ducky2025", difficulty = "Hard"}
+   -- Ducky Event maps[New]
 }
 
 local ElevatorSettings = {
@@ -138,6 +140,12 @@ return function(self, p1)
                         ["mode"] = SpecialTable.mode,
                     })
                 elseif SpecialTable.mode == "frostInvasion" then
+                    RemoteFunction:InvokeServer("Multiplayer","v2:start",{
+                        ["difficulty"] = if getgenv().EventEasyMode then "Easy" else SpecialTable.difficulty,
+                        ["mode"] = SpecialTable.mode,
+                        ["count"] = 1,
+                    })
+                 elseif SpecialTable.mode == "ducky2025" then
                     RemoteFunction:InvokeServer("Multiplayer","v2:start",{
                         ["difficulty"] = if getgenv().EventEasyMode then "Easy" else SpecialTable.difficulty,
                         ["mode"] = SpecialTable.mode,
