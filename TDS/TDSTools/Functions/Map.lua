@@ -28,7 +28,7 @@ local SpecialGameMode = {
        ["Baseplate-L"] = {mode = "april_fools2025", difficulty = "Map A"},
        ["Baseplate-W"] = {mode = "april_fools2025", difficulty = "Map B"},
    -- April Fools Maps[STILL EXIST]
-       ["Bathroom Approach"] = {mode = "ducky2025", difficulty = "Hard"}
+       ["Bathroom Approach"] = {mode = "ducky2025", difficulty = "Hard"},
    -- Ducky Event maps[New]
 }
 
