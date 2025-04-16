@@ -147,6 +147,8 @@ local SpecialMaps = {
 	"Baseplate-L",
 	"Baseplate-W"
 	--April Fools Special Maps ^^^^^^
+	"Bathroom Approach"
+	--Ducky Event Maps 
 }
 
 local SpecialGameMode = {
@@ -169,6 +171,7 @@ local SpecialGameMode = {
     ["Huevous Hunt"] = {""},
            ["Baseplate-L"] = {mode = "april_fools2025", difficulty = "Map A"},
        ["Baseplate-W"] = {mode = "april_fools2025", difficulty = "Map B"},
+	["Bathroom Approach"] = {mode = "ducky2025", difficulty = "Hard"},
     --The Hunt Event Maps [NO LONGER EXIST IN GAME FILES]
 }
 
@@ -892,6 +895,13 @@ if CheckPlace() then
 								["count"] = 1,
 							})
 							SafeTeleport(Remote)
+						elseif SpecialTable.mode == "ducky2025" then
+							Remote = RemoteFunction:InvokeServer("Multiplayer","v2:start",{
+								["difficulty"] = if getgenv().EventEasyMode then "Easy" else "Hard",
+								["mode"] = SpecialTable.mode,
+								["count"] = 1,
+							})
+							SafeTeleport(Remote)									
 						elseif SpecialTable.mode == "april_fools2025" then
 							Remote = RemoteFunction:InvokeServer("Multiplayer","v2:start",{
 								["difficulty"] = SpecialTable.difficulty,
