@@ -145,7 +145,7 @@ local SpecialMaps = {
 	"Huevous Hunt",
 	--The Hunt Roblox Event Special Maps ^^^^^^
 	"Baseplate-L",
-	"Baseplate-W"
+	"Baseplate-W",
 	--April Fools Special Maps ^^^^^^
 	"Bathroom Approach"
 	--Ducky Event Maps 
