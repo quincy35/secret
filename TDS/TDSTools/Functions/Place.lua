@@ -239,8 +239,8 @@ return function(self, p1)
                 return
             end
             PlaceCheck = RemoteFunction:InvokeServer("Troops","Place",{
-                ["Position"] = TowerTable.Position,
-                ["Rotation"] = TowerTable.Rotation
+                ["Rotation"] = TowerTable.Rotation,
+                ["Position"] = TowerTable.Position
             },Tower)
             task.wait()
         until typeof(PlaceCheck) == "Instance" --return instance
