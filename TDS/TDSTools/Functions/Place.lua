@@ -238,7 +238,7 @@ return function(self, p1)
             if CurrentCount ~= StratXLibrary.RestartCount then
                 return
             end
-            PlaceCheck = RemoteFunction:InvokeServer("Troops","Pl\208\176ce",{
+            PlaceCheck = RemoteFunction:InvokeServer("Troops","Place",{
                 ["Rotation"] = TowerTable.Rotation,
                 ["Position"] = TowerTable.Position
             },Tower)
