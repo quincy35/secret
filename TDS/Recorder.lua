@@ -1,4 +1,4 @@
---[[if game.PlaceId ~= 3260590327 then 
+if game.PlaceId ~= 3260590327 then 
     local Workspace = game:GetService("Workspace")
     local Players = game:GetService("Players")
     local LocalPlayer = Players.LocalPlayer
@@ -173,7 +173,7 @@
             end
             task.wait()
         until VoteState
-    end]]
+    end
 
     function ConvertTimer(number : number)
     return math.floor(number/60), number % 60
