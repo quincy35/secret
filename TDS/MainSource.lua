@@ -13,7 +13,7 @@ end
 local Version = "Version: 0.3.22 [Alpha]"
 local Items = {
 	Enabled = true,
-	Name = {"Duck", "Lorebook"}
+	Name = {"BeachBall", "Lorebook"}
 }
 
 local LoadLocal = false
@@ -1053,7 +1053,7 @@ if CheckPlace() then
 			while true do
 				for Index, Object in next, Pickups:GetChildren() do
 					if getgenv().DefaultCam ~= 1 then
-						--game:GetService("TweenService"):Create(LocalPlayer.Character:FindFirstChild("HumanoidRootPart"), TweenInfo.new(0, Enum.EasingStyle.Linear), {CFrame = LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame +  Vector3.new(0, 3.3, 0)}):Play()
+						game:GetService("TweenService"):Create(LocalPlayer.Character:FindFirstChild("HumanoidRootPart"), TweenInfo.new(0, Enum.EasingStyle.Linear), {CFrame = LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame +  Vector3.new(0, 3.3, 0)}):Play()
 						task.wait(.1)
 					end
 					if Object:IsA("MeshPart") and table.find(Items.Name, Object.Name) and Object.CFrame.Y < 200 then
